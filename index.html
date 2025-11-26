@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Geoportal Puntos de riesgo </title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/veredas_con_datos_1.js"></script><script src="layers/puntocritico38_2.js"></script><script src="layers/Puntocritico37_3.js"></script><script src="layers/puntocritico36_4.js"></script><script src="layers/puntocritico35_5.js"></script><script src="layers/puntocritico34_6.js"></script><script src="layers/puntocritico33_7.js"></script><script src="layers/puntocritico32_8.js"></script><script src="layers/puntocritico311_9.js"></script><script src="layers/puntocritico30_10.js"></script><script src="layers/puntocritico29_11.js"></script><script src="layers/puntocritico28_12.js"></script><script src="layers/puntocritico27_13.js"></script><script src="layers/puntocritico26_14.js"></script><script src="layers/Puntocritico25_15.js"></script><script src="layers/puntocritico24_16.js"></script><script src="layers/puntocritico23_17.js"></script><script src="layers/puntocritico22_18.js"></script><script src="layers/puntocritico21_19.js"></script><script src="layers/puntocritico20_20.js"></script><script src="layers/puntocritico19_21.js"></script><script src="layers/puntocritico18_22.js"></script><script src="layers/puntocritico17_23.js"></script><script src="layers/puntocritico16_24.js"></script><script src="layers/puntocritico15_25.js"></script><script src="layers/puntocritico14_26.js"></script><script src="layers/puntocritico13_27.js"></script><script src="layers/puntocritico12_28.js"></script><script src="layers/puntocritico11_29.js"></script><script src="layers/puntocritico10_30.js"></script><script src="layers/puntocritico9_31.js"></script><script src="layers/Puntocritico8_32.js"></script><script src="layers/puntocritico7_33.js"></script><script src="layers/puntocritico6_34.js"></script><script src="layers/puntocritico5_35.js"></script><script src="layers/puntocritico4_36.js"></script><script src="layers/puntocritico3_37.js"></script><script src="layers/Puntocritico2_38.js"></script><script src="layers/Puntocritico1_39.js"></script>
+        <script src="styles/veredas_con_datos_1_style.js"></script><script src="styles/puntocritico38_2_style.js"></script><script src="styles/Puntocritico37_3_style.js"></script><script src="styles/puntocritico36_4_style.js"></script><script src="styles/puntocritico35_5_style.js"></script><script src="styles/puntocritico34_6_style.js"></script><script src="styles/puntocritico33_7_style.js"></script><script src="styles/puntocritico32_8_style.js"></script><script src="styles/puntocritico311_9_style.js"></script><script src="styles/puntocritico30_10_style.js"></script><script src="styles/puntocritico29_11_style.js"></script><script src="styles/puntocritico28_12_style.js"></script><script src="styles/puntocritico27_13_style.js"></script><script src="styles/puntocritico26_14_style.js"></script><script src="styles/Puntocritico25_15_style.js"></script><script src="styles/puntocritico24_16_style.js"></script><script src="styles/puntocritico23_17_style.js"></script><script src="styles/puntocritico22_18_style.js"></script><script src="styles/puntocritico21_19_style.js"></script><script src="styles/puntocritico20_20_style.js"></script><script src="styles/puntocritico19_21_style.js"></script><script src="styles/puntocritico18_22_style.js"></script><script src="styles/puntocritico17_23_style.js"></script><script src="styles/puntocritico16_24_style.js"></script><script src="styles/puntocritico15_25_style.js"></script><script src="styles/puntocritico14_26_style.js"></script><script src="styles/puntocritico13_27_style.js"></script><script src="styles/puntocritico12_28_style.js"></script><script src="styles/puntocritico11_29_style.js"></script><script src="styles/puntocritico10_30_style.js"></script><script src="styles/puntocritico9_31_style.js"></script><script src="styles/Puntocritico8_32_style.js"></script><script src="styles/puntocritico7_33_style.js"></script><script src="styles/puntocritico6_34_style.js"></script><script src="styles/puntocritico5_35_style.js"></script><script src="styles/puntocritico4_36_style.js"></script><script src="styles/puntocritico3_37_style.js"></script><script src="styles/Puntocritico2_38_style.js"></script><script src="styles/Puntocritico1_39_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
